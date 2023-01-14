@@ -3,6 +3,7 @@
   --secColor: #1f3b6f;
   --thirdColor: #f1a01f;
   --fourthColor: #04ab92;
+  --linear:   background-image: linear-gradient(135deg, #f1a01f, #f04c2b);
 }
 
 p,h1,h1,h3,h4,h5,h6, div,a {
@@ -335,13 +336,10 @@ categroy courses
   background-color: var(--mainColor);
   transform: skewX(-3deg);
   -webkit-transform: skewX(-3deg);
+    background-image: linear-gradient(135deg, #f1a01f, #f04c2b);
+
 }
 
-.collection-item .overlay-two {
-  background-color: var(--thirdColor);
-  transform: skewX(3deg);
-  -webkit-transform: skewX(-3deg);
-}
 .collection-item:hover {
   transform: scale(1.05);
 }
