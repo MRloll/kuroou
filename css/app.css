@@ -281,6 +281,7 @@ nav.navbar  {
   grid-template-rows: auto auto;
   border-radius: 8px;
   background-color: var(--thirdColor);
+  background-image: linear-gradient(135deg, #f1a01f, #f04c2b);
   box-shadow: 1px 1px 3px 0 rgb(0 0 0 / 27%);
   color: var(--secColor);
 }
