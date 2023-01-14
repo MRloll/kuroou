@@ -103,7 +103,7 @@ li {
 }
 
 .container-large {
-  padding: 12em 0;
+  padding: 170px 0 100px ;
   max-width: 80rem;
   margin-right: auto;
   margin-left: auto;
@@ -117,7 +117,7 @@ li {
 }
 
 .course-text-wrapper {
-  max-width: 32ch;
+  max-width: 49ch;
 }
 
 .course-text-heading {
@@ -214,6 +214,9 @@ nav.navbar  {
   border-radius: 10px;  
 }
 
+nav .logo img {
+  width: 170px;
+}
 @media (max-width:991px ) {
   .navbar-collapse  {
     margin-top: 20px;
