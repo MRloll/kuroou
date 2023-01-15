@@ -808,17 +808,15 @@ footer .subscribe form button {
 }
 
 footer .footer-body {
-  color: #fff;
-  padding: 100px 0;
+  color: var(--secColor);
+  font-weight: bold;
+  padding: 100px 0 40px;
 }
 
 footer .footer-body  .head {
   margin-bottom: 20px;
 }
 
-footer .footer-body p {
-  color: #fff;
-}
 footer .footer-body  ul {
   padding-right: 0;
 }
@@ -831,7 +829,7 @@ footer .footer-body  ul li a {
 }
 
 footer .footer-body  ul li a:hover {
-  color: var(--secColor);
+  color: white;
 }
 
 footer .footer-body .logo-sec .head img {
