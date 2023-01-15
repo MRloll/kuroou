@@ -1,0 +1,48 @@
+.our-team .cards .card {
+  border-radius: 6px;
+  border: none;
+  border-bottom: 4px solid #4b5563;
+}
+.our-team .cards > div {
+  margin-top: 50px;
+}
+
+.our-team .cards > div:nth-child(even) .card,
+.our-team .cards > div:nth-child(even) .card .card-footer p,
+.our-team .cards > div:nth-child(even) .card svg {
+  border-bottom-color: var(--mainColor) !important;
+  fill: var(--mainColor);
+  color: var(--mainColor);
+}
+
+.our-team .cards > div:nth-child(odd) .card,
+.our-team .cards > div:nth-child(odd) .card .card-footer p,
+.our-team .cards > div:nth-child(odd) .card svg {
+  border-color: var(--thirdColor);
+  fill: var(--thirdColor);
+  color: var(--thirdColor);
+}
+
+.our-team .cards .card img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.our-team .card-body {
+  padding: 1rem 1.5rem;
+}
+.our-team .card-body p {
+  color: #4b5563;
+}
+.our-team .card-shape {
+  position: relative;
+}
+.our-team .custom-shape-divider-bottom {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
