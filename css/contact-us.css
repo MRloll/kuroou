@@ -1,0 +1,54 @@
+.contact-us ul li {
+  display: inline-block;
+  margin: 20px 0 20px 10px;
+}
+
+.contact-us ul:last-of-type li {
+  margin-top: 10px;
+}
+
+.contact-us ul:last-of-type li img {
+  width: 16px;
+  height: 16px;
+}
+
+.contact-us .form form > div {
+  margin-bottom: 20px;
+}
+.contact-us .form form .form-row {
+  display: flex;
+}
+
+.contact-us .form form label {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-us .form form .phone-form {
+  width: 70px;
+  margin-left: 20px;
+}
+.contact-us .form form .number-form {
+  width: calc(100% - 93px);
+}
+.contact-us .form form input[type="submit"]:hover {
+  color: white;
+}
+.contact-us iframe {
+  min-height: 600px;
+}
+
+@media (max-width: 575px) {
+  .contact-us ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contact-us span {
+    font-size: 14px;
+  }
+
+  .contact-us h6 {
+    margin-top: 20px;
+  }
+}

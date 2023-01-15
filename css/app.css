@@ -24,6 +24,7 @@ a{
 li {
   list-style: none;
 }
+
 .custom-container {
   padding: 12px;
   margin-right: auto;
@@ -31,6 +32,18 @@ li {
   width: 90%;
 }
 
+.base-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, var(--mainColor), var(--thirdColor));
+  color: white;
+  margin: 20px auto;
+  width: 134px;
+  height: 50px;
+  border: none;
+}
 
 
 /* --------------------------------------- */

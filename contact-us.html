@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="Kedeel" content="Kedeel" />
+    <title>Kedeel - Contact Us</title>
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/contact-us.css" type="text/css" />
+  </head>
+  <body>
+    <div class="top-banner">
+      <div class="container">
+        <div class="top-banner-layout d-flex justify-content-between">
+          <div class="banner-text">اهلا بك في موقعنا</div>
+          <div class="text-end">
+            <div class="change_lang">
+              <i class="fas fa-language"></i>
+            </div>
+            <div class="dropdown-list">
+              <div class="wrapper">
+                <ul>
+                  <li>
+                    <a href="./index-rtl.html"><bdi>عربي</bdi></a>
+                  </li>
+                  <li><a href="./index.html">English</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-course-header">
+      <div class="container position-relative">
+        <div class="home-nav-wrapper">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary p-none">
+            <div class="container-fluid p-0">
+              <div class="navbar_menu-buttons d-none d-lg-block">
+                <div class="button-row">
+                  <a
+                    href="#"
+                    aria-current="page"
+                    class="nav-button w-button w--current"
+                    >ابدا الان</a
+                  >
+                </div>
+              </div>
+              <div class="logo d-block d-lg-none">
+                <img src="./images/kedeel-logo.svg" alt="" />
+              </div>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html"
+                      >الرئيسيىة</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">المحاضرون</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">اتصل بنا</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="logo d-none d-lg-block">
+              <img src="./images/kedeel-logo.svg" alt="" />
+            </div>
+          </nav>
+        </div>
+        <div class="container-large">
+          <div class="padding-vertical">
+            <div class="course-catalog-content">
+              <div class="course-text-wrapper">
+                <h1 class="course-text-heading">اتصل بنا</h1>
+                <p class="pt-5 h4">
+                  يمكنكم التواصل عبر المحادثة المباشرة في الواتس اب وفق الأوقات
+                  التي نتواجد بها أو تعبئة طلب استشارة وتحديد موعد للتواصل معكم
+                </p>
+              </div>
+              <img
+                class="d-none d-lg-block"
+                src="./images/kedeel-logo.svg"
+                alt="logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact-us py-5" id="contact-us">
+      <div class="container">
+        <div class="heading text-center mb-5">
+          <div class="flexy-heading mb-3">
+            <h2>أتصل بنا</h2>
+          </div>
+          <p>
+            يمكنكم التواصل عبر المحادثة المباشرة في الواتس اب وفق الأوقات التي
+            نتواجد بها أو تعبئة طلب استشارة وتحديد موعد للتواصل معكم
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-12 order-1 order-lg-0 mt-lg-0 mt-5">
+            <div class="form text-right">
+              <form>
+                <div class="form-group">
+                  <label for="name">أسمك بالكامل</label>
+                  <input
+                    type="text"
+                    class="form-control name"
+                    id="name"
+                    data-target="name"
+                    placeholder="أكتب أسمك هنا"
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="form-group phone-form">
+                    <label for="phoneCode">رقم الجوال</label>
+                    <input
+                      type="text"
+                      readonly
+                      class="form-control phone"
+                      id="phoneCode"
+                      data-target="phone"
+                      placeholder="+966"
+                    />
+                  </div>
+                  <div class="form-group number-form">
+                    <label for="phoneNom" class="invisible">phone</label>
+                    <input
+                      maxlength="9"
+                      type="text"
+                      class="form-control phone-nom"
+                      id="phoneNom"
+                      data-target="email"
+                      placeholder="مثال : 12 345 6789"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">البريد الإلكتروني</label>
+                  <input
+                    type="email"
+                    class="form-control email"
+                    id="email"
+                    placeholder="مثال : example@gmail.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="topic">الموضوع</label>
+                  <textarea
+                    class="form-control"
+                    name="topic"
+                    id="topic"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <input
+                    data-target=".main-contact"
+                    type="submit"
+                    class="base-button btn mx-0"
+                    value="ارسال"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <iframe
+              class="w-100"
+              style="border: 0; border-radius: 6px"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237685.0692940347!2d39.70646057504093!3d21.43595714304669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2sMecca%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1673793283696!5m2!1sen!2seg"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////////
+      footer 
+     ////////////-->
+    <footer>
+      <div class="container">
+        <div class="subscribe">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div
+                class="title wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.4s"
+              >
+                <h3>
+                  اشترك في نشرتنا الاخبارية
+                  <span>تعرف علي كل التحديثات</span>
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <form
+                action="post"
+                class="wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.7s"
+              >
+                <input type="email" placeholder="اكتب الايميل" />
+                <button class="button">اشرتك</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-body">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="logo-sec wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.6s"
+              >
+                <div class="head">
+                  <img src="images/kedeel-logo.svg" alt="logo" />
+                </div>
+                <p>
+                  بعض الكلام يكون هنابعض الكلام يكون هنابعض الكلام يكون هنابعض
+                  الكلام يكون هنابعض الكلام يكون هنا
+                </p>
+                <div class="social">
+                  <ul>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.facebook.com/walidloll"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://twitter.com/WalidElloll"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/walid.elloll"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/walid-salah-b63631170/"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 order-2 order-lg-1">
+              <div
+                class="quick-links wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="0.9s"
+              >
+                <div class="head">
+                  <h3>روابط سريعة</h3>
+                </div>
+                <ul>
+                  <li><a href="#">محاضرونا</a></li>
+                  <li><a href="#">الرئيسية</a></li>
+                  <li><a href="#">كورساتنا</a></li>
+                  <li><a href="#">الاسعار</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 order-3 order-lg-2">
+              <div
+                class="resources wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="1.2s"
+              >
+                <div class="head">
+                  <h3>اخر الكورسات</h3>
+                </div>
+                <ul>
+                  <li><a href="#home">كورس</a></li>
+                  <li><a href="#features">كورس</a></li>
+                  <li><a href="#about">كورس</a></li>
+                  <li><a href="#team">كورس</a></li>
+                  <li><a href="#blog">كورس</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 order-1 order-lg-3">
+              <div
+                class="contact wow fadeIn"
+                data-wow-duration="1.3s"
+                data-wow-delay="1.5s"
+              >
+                <div class="head">
+                  <h3>اتصل بنا</h3>
+                </div>
+                <ul>
+                  <li>+201013194797</li>
+                  <li>example@gmail.com</li>
+                  <li>السعودية, الرياض</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/jQuery-3-4-1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/app.js"></script>
+</html>
