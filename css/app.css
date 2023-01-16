@@ -1,8 +1,9 @@
 :root {
-  --mainColor: #f04c2b;
-  --secColor: #1f3b6f;
-  --thirdColor: #f1a01f;
-  --fourthColor: #04ab92;
+  --mainColor: #F9A41A;
+  --secColor:  #2053A4;
+  --thirdColor: #EC1C26;
+  --thirdDark: #340608;
+  --fourthColor: #00AA4E;
   --linear:   background-image: linear-gradient(135deg, #f1a01f, #f04c2b);
 }
 
@@ -37,12 +38,32 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, var(--mainColor), var(--thirdColor));
+  background: linear-gradient(to right, var(--thirdDark), var(--thirdColor));
   color: white;
   margin: 20px auto;
   width: 134px;
   height: 50px;
   border: none;
+}
+
+.slick-dots li button {
+  background-color:  var(--mainColor);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  transition: all 0.5s ease;
+margin-top: 10px;
+}
+
+.slick-dots li.slick-active button {
+  width: 20px;
+  height: 20px;
+  background-color:  #ad6b01;
+}
+
+
+.slick-wrapper {
+  padding: 0 15px;
 }
 
 
@@ -88,7 +109,7 @@ li {
   font-weight: bold;
   background:var(--secColor);
   border-radius: 6px;
-  border: 1px solid  var(--thirdColor);
+  border: 1px solid  var(--mainColor);
   padding: 30px 10px;
   width: 87px;
   text-align: center;
@@ -106,20 +127,10 @@ li {
 
 /* header  */
 .section-course-header {
-  margin-right: 1em;
-  margin-left: 1em;
-  border-radius: 1.5em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/banner.webp);
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner.webp);
-  background-position: 0 0, 0 0;
-  background-size: auto, cover;
-  background-repeat: repeat, no-repeat;
   color: white;
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
-
-
 }
 
 .container-large {
@@ -128,18 +139,70 @@ li {
   margin-right: auto;
   margin-left: auto;
 }
+
 .course-catalog-content {
+  position: relative;
+  padding: 170px 15px ;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.course-catalog-content .details-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: auto;
+}
 
+.course-catalog-content .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.course-catalog-content .bg .overlay {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.course-catalog-content .bg .overlay::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--mainColor)), to(var(--thirdColor)));
+  background: linear-gradient(180deg, var(--mainColor), var(--thirdColor));  
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.course-catalog-content .bg .overlay.img1 {
+  background-image:  url(../images/banner1.jpg);
+}
+
+.course-catalog-content .bg .overlay.img2 {
+  background-image:  url(../images/banner2.jpg);
 }
 
 .course-text-wrapper {
   max-width: 49ch;
+  position: relative;
+  z-index: 2;
 }
 
 .course-text-heading {
@@ -152,8 +215,10 @@ li {
   font-weight: 700;
 }
 
-.course-catalog-content img {
+.course-catalog-content img.logo {
   width: 400px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 991px) {
@@ -171,6 +236,9 @@ li {
 /* nav */
 nav.navbar  {
   background-color: transparent !important;
+  position: relative;
+  z-index: 3;
+  padding: 0 15px;
 }
 
 .home-nav-wrapper {
@@ -196,8 +264,8 @@ nav.navbar  {
   align-items: center;
   border-radius: 8em;
   background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(7%, #fc4c44), to(#ffca46));
-  background-image: linear-gradient(90deg, #fc4c44 7%, #ffca46);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(7%, var(--thirdDark)), to(var(--thirdColor)));
+  background-image: linear-gradient(90deg, var(--thirdDark) 7%, var(--thirdColor));
   color: #fff;
   font-size: 0.8125rem;
   line-height: 1;
@@ -212,14 +280,15 @@ nav.navbar  {
 
 .navbar-nav .nav-link {
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .navbar-nav .nav-link.active {
-  color: var(--mainColor);
+  color: var(--thirdColor);
 }
 .navbar-toggler-icon {
-  background-color: var(--main-color);
+  background-color: var(--mainColor);
+
   padding: 14px;
   border-radius: 5px;
 }
@@ -328,11 +397,35 @@ nav .logo img {
 }
 
 /* *************
+counter
+*******************/
+.counter h3 {
+  font-size: 70px;
+  font-weight: lighter;
+  color: var(--thirdColor);
+}
+.counter .divider {
+  width: 40px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--mainColor);
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.counter p {
+  font-size: 30px;
+  color: var(--secColor);
+}
+
+
+
+/* *************
 categroy courses
 *******************/
 .category-item li {
   background-color: var(--mainColor);
-  background-image: linear-gradient(135deg, #f1a01f, #f04c2b);
+  /* background-image: linear-gradient(135deg, var(--thirdDark), var(--thirdColor)); */
   border: none;
   margin-bottom: 10px;
 }
@@ -353,7 +446,7 @@ categroy courses
 }
 
 .collection-item a .courses-tile-item  {
-  color: var(--secColor);
+  color: var(--mainColor);
 }
 .collection-item .overlay {
   position: absolute;
@@ -369,7 +462,7 @@ categroy courses
   background-color: var(--mainColor);
   transform: skewX(-3deg);
   -webkit-transform: skewX(-3deg);
-    background-image: linear-gradient(135deg, #f1a01f, #f04c2b);
+    /* background-image: linear-gradient(var(--thirdColor), var(--mainColor)); */
 
 }
 
@@ -388,6 +481,10 @@ categroy courses
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #f5f5f8;
+}
+
+.section-courses-tiles  .catalogue-label-div {
+  color: var(--secColor);
 }
 
 .catalogue-label-div {
@@ -478,43 +575,18 @@ categroy courses
   font-size: 22px;
   line-height: 1.3em;
   letter-spacing: -0.03em;
+  background-image: linear-gradient(90deg, var(--mainColor) ,var(--thirdColor) );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
+
 .instructor-text-div {
   display: block;
   margin-bottom: 10px;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(6%, #5468e5), color-stop(38%, #19cf23));
   background-image: linear-gradient(90deg, #5468e5 6%, #19cf23 38%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.course-instructor-with.green-gradient {
-  display: inline-block;
-  margin-right: 4px;
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 700;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.course-instructor-with {
-  font-size: 12px;
-  line-height: 1.6;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.courses-tile-course-detail.green-gradient {
-  display: inline;
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 700;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .course-tile-paragraph-wrapper {
@@ -660,6 +732,7 @@ categroy courses
   line-height: 1.5;
   font-weight: 700;
   text-transform: uppercase;
+  
 }
 
 .courses-price-wrapper {
@@ -672,9 +745,14 @@ categroy courses
 
 .courses-tile-price {
   font-size: 1.9em;
-  line-height: 0.5;
   font-weight: 700;
   text-transform: uppercase;
+    background-image: linear-gradient(90deg, var(--mainColor) ,var(--thirdColor) );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
 }
 
 @media (max-width: 991px) {
@@ -699,6 +777,8 @@ footer {
   background: url(../images/footer-bg.svg);
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 footer .container {
@@ -744,6 +824,9 @@ footer .subscribe .title span {
 }
 
 @media (min-width: 992px) {
+  footer {
+    height: 850px;
+  }
   footer .subscribe .title {
     margin-bottom: 0;
   }
@@ -790,7 +873,7 @@ footer .subscribe form button {
   line-height: 45px;
   color: #fff;
   background: -webkit-gradient(linear,left top,right top,from(#fe8464),color-stop(50%,#fe6e9a),to(#fe8464));
-  background: linear-gradient(90deg,var(--mainColor) 0,var(--thirdColor) 50%,#fe8464);
+  background: linear-gradient(90deg,var(--thirdDark) 0,var(--thirdColor) 50%,#fe8464);
   background-size: 200%;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -808,7 +891,7 @@ footer .subscribe form button {
 }
 
 footer .footer-body {
-  color: var(--secColor);
+  color: #fff;
   font-weight: bold;
   padding: 100px 0 40px;
 }

@@ -1,3 +1,6 @@
+.our-team {
+  color: var(--secColor);
+}
 .our-team .cards .card {
   border-radius: 6px;
   border: none;

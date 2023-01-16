@@ -15,13 +15,36 @@
     />
     <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
     <meta name="Kedeel" content="Kedeel" />
-    <title>Kuroou - Contact Us</title>
+    <title>Kuroou - FAQ</title>
     <link rel="stylesheet" href="css/all.min.css" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/slick.css" type="text/css" />
     <link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
     <link rel="stylesheet" href="css/app.css" type="text/css" />
     <link rel="stylesheet" href="css/contact-us.css" type="text/css" />
+    <style>
+      h1 {
+        color: var(--secColor);
+      }
+      .accordion-button {
+        display: flex;
+        justify-content: space-between;
+        font-size: 25px;
+      }
+      .accordion-button:focus {
+        border-color: initial;
+        outline: 0;
+        box-shadow: none;
+      }
+
+      .accordion-button::after {
+        margin: 0;
+      }
+      .accordion-button:not(.collapsed) {
+        color: var(--secColor);
+        background-color: var(--mainColor);
+      }
+    </style>
   </head>
   <body>
     <div class="top-banner">
@@ -149,99 +172,108 @@
         </div>
       </div>
     </div>
-    <section class="contact-us py-5" id="contact-us">
-      <div class="container">
-        <div class="heading text-center mb-5">
-          <div class="flexy-heading mb-3">
-            <h1>أتصل بنا</h1>
-          </div>
-          <p>
-            يمكنكم التواصل عبر المحادثة المباشرة في الواتس اب وفق الأوقات التي
-            نتواجد بها أو تعبئة طلب استشارة وتحديد موعد للتواصل معكم
-          </p>
-        </div>
 
-        <div class="row">
-          <div class="col-lg-6 col-12 order-1 order-lg-0 mt-lg-0 mt-5">
-            <div class="form text-right">
-              <form>
-                <div class="form-group">
-                  <label for="name">أسمك بالكامل</label>
-                  <input
-                    type="text"
-                    class="form-control name"
-                    id="name"
-                    data-target="name"
-                    placeholder="أكتب أسمك هنا"
-                  />
-                </div>
-                <div class="form-row">
-                  <div class="form-group phone-form">
-                    <label for="phoneCode">رقم الجوال</label>
-                    <input
-                      type="text"
-                      readonly
-                      class="form-control phone"
-                      id="phoneCode"
-                      data-target="phone"
-                      placeholder="+966"
-                    />
-                  </div>
-                  <div class="form-group number-form">
-                    <label for="phoneNom" class="invisible">phone</label>
-                    <input
-                      maxlength="9"
-                      type="text"
-                      class="form-control phone-nom"
-                      id="phoneNom"
-                      data-target="email"
-                      placeholder="مثال : 12 345 6789"
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="email">البريد الإلكتروني</label>
-                  <input
-                    type="email"
-                    class="form-control email"
-                    id="email"
-                    placeholder="مثال : example@gmail.com"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="topic">الموضوع</label>
-                  <textarea
-                    class="form-control"
-                    name="topic"
-                    id="topic"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </div>
-                <div class="form-group">
-                  <input
-                    data-target=".main-contact"
-                    type="submit"
-                    class="base-button btn mx-0"
-                    value="ارسال"
-                  />
-                </div>
-              </form>
+    <div class="container faq pt-5 mt-5">
+      <h1 class="text-center mb-5">الاسئلة الشائعة</h1>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              سؤال
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+              الاجابة تكون هنا الاجابة تكون هنا الاجابة تكون هنا الاجابة تكون
+              هنا الاجابة تكون هنا
             </div>
           </div>
-          <div class="col-lg-6 col-12">
-            <iframe
-              class="w-100"
-              style="border: 0; border-radius: 6px"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237685.0692940347!2d39.70646057504093!3d21.43595714304669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2sMecca%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1673793283696!5m2!1sen!2seg"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              سؤال
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body">
+              الاجابة تكون هنا الاجابة تكون هنا الاجابة تكون هنا الاجابة تكون
+              هنا الاجابة تكون هنا
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              سؤال
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body">
+              الاجابة تكون هنا الاجابة تكون هنا الاجابة تكون هنا الاجابة تكون
+              هنا الاجابة تكون هنا
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              سؤال
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour"
+          >
+            <div class="accordion-body">
+              الاجابة تكون هنا الاجابة تكون هنا الاجابة تكون هنا الاجابة تكون
+              هنا الاجابة تكون هنا
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
     <!-- /////////////////
       footer 
      ////////////-->
