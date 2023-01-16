@@ -29,16 +29,6 @@
     }
 
 
-    // counter
-    let windowHeight = $(window).height();
-    $(window).on('scroll load', function () {
-        if ($(window).scrollTop() > $('.statics').offset().top - windowHeight) {
-            counter();
-            $(this).off('scroll');
-        }
-    });
-
-
 
   $(".change_lang").on("click", () => {
       $(".dropdown-list .wrapper, nav .dropdown-list .wrapper").slideToggle(200)

@@ -62,7 +62,7 @@
                 </div>
               </div>
               <div class="logo d-block d-lg-none">
-                <img src="./images/Kuroou-logo.svg" alt="logo" />
+                <img src="./images/kuroou-logo.svg" alt="logo" />
               </div>
 
               <button
@@ -943,6 +943,15 @@
     $(".category-item li").on("click", function () {
       var filterValue = $(this).attr("data-filter");
       $grid.isotope({ filter: filterValue });
+    });
+
+    // counter
+    let windowHeight = $(window).height();
+    $(window).on("scroll load", function () {
+      if ($(window).scrollTop() > $(".statics").offset().top - windowHeight) {
+        counter();
+        $(this).off("scroll");
+      }
     });
   </script>
 </html>
