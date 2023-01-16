@@ -355,6 +355,7 @@ nav .logo img {
   grid-template-rows: auto auto;
 }
 
+
 .countdown-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -399,12 +400,12 @@ nav .logo img {
 /* *************
 counter
 *******************/
-.counter h3 {
+.statics  h3 {
   font-size: 70px;
   font-weight: lighter;
   color: var(--thirdColor);
 }
-.counter .divider {
+.statics  .divider {
   width: 40px;
   height: 4px;
   border-radius: 5px;
@@ -413,10 +414,18 @@ counter
   margin-bottom: 20px;
 }
 
-.counter p {
+.statics  p {
   font-size: 30px;
   color: var(--secColor);
 }
+
+.statics .nom {
+  border: 2px solid #f9a41a;
+  padding: 20px 0;
+  border-radius: 11px;
+  margin-bottom: 20px;
+}
+
 
 
 
