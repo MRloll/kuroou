@@ -1,35 +1,6 @@
 (function ($) {
   "use strict";
 
-    //counter function for statistics
-    function counter() {
-        $('.counter').each(function() {
-            var counter = $(this),
-                countTo = counter.attr('data-count');
-
-            const countObj = { countNum: counter.text()}
-
-            $(countObj).animate({
-                countNum: countTo
-            },{
-
-                duration: 2000,
-                easing:'linear',
-                step: function() {
-
-                    counter.text(Math.floor(this.countNum));
-                },
-                complete: function() {
-                    counter.text(this.countNum);
-                //alert('finished');
-                }
-
-            });
-        });        
-    }
-
-
-
   $(".change_lang").on("click", () => {
       $(".dropdown-list .wrapper, nav .dropdown-list .wrapper").slideToggle(200)
   })
