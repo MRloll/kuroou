@@ -3,6 +3,7 @@
 
 
 
+
   $(".change_lang").on("click", () => {
       $(".dropdown-list .wrapper, nav .dropdown-list .wrapper").slideToggle(200)
   })
@@ -92,6 +93,17 @@
         // autoplaySpeed: 2000,
   
     });
+
+
+
+    $(".scroll-top").on("click", () => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        
+    } )
 
 
 })(jQuery);

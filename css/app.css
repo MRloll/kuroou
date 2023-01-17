@@ -98,22 +98,39 @@ margin-top: 10px;
 }
 
 
+.scroll-top {
+  position: fixed;
+  z-index: 3;
+  bottom: 80px;
+  right: 35px;
+background: var(--secColor);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .whatsapp-fixed{
-  color: #007bff;
     text-decoration: none;
     background-color: transparent;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    position: fixed;
+    bottom: 80px;
+    left: 35px;
+    padding: 10px;
+    background-color:var(--secColor);
+    color: #fff;
+    border-radius: 50%;
+    z-index: 3;
 }
 
 .whatsapp-fixed i{
-  position: fixed;
-    bottom: 80px;
-    left: 35px;
-    background-color:var(--thirdColor);
-    padding: 8px;
-    color: #fff;
-    border-radius: 50%;
     cursor: pointer;
-    z-index: 3;
     font-size: 30px;
     -webkit-transition: background-color .6s;
     -o-transition: background-color .6s;
@@ -124,7 +141,6 @@ margin-top: 10px;
 }
 
 .whatsapp-fixed i:hover{
-    background-color: var(--mainColor);
     -webkit-transform: rotateZ(360deg);
     -ms-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
@@ -275,19 +291,23 @@ margin-top: 10px;
   }
 }
 /* nav */
-nav.navbar  {
-  background-color: transparent !important;
-  position: relative;
-  z-index: 3;
-  padding: 0 15px;
+.home-nav-wrapper {
+  background-color: var(--secColor);
+  margin-bottom: 20px;
+  
+  position: sticky !important;
+  top: 0;
+  z-index: 10;
+
 }
 
-.home-nav-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
+nav.navbar  {
+  border-radius: 5px 5px 0 0;  position: relative;
+  z-index: 3;
+  padding: 0 15px;
+  background-color: transparent !important;
 }
+
 
 .nav-button {
   display: -webkit-box;
@@ -325,7 +345,7 @@ nav.navbar  {
 }
 
 .navbar-nav .nav-link.active {
-  color: var(--thirdColor);
+  color: var(--mainColor);
 }
 .navbar-toggler-icon {
   background-color: var(--mainColor);
@@ -396,6 +416,16 @@ nav .logo img {
   grid-template-rows: auto auto;
 }
 
+.custom-padge {
+  position: absolute;
+  z-index: 1;
+  top: 13px;
+  right: 13px;
+  padding: 5px 10px; 
+  border-radius: 10px;
+  background-color: var(--secColor);
+  color: white;
+}
 
 .countdown-title {
   margin-top: 0;
@@ -444,13 +474,13 @@ counter
 .statics  h3 {
   font-size: 70px;
   font-weight: lighter;
-  color: var(--thirdColor);
+  color: var(--mainColor);
 }
 .statics  .divider {
   width: 40px;
   height: 4px;
   border-radius: 5px;
-  background-color: var(--mainColor);
+  background-color: #333;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -929,8 +959,8 @@ footer .subscribe form button {
   width: 120px;
   line-height: 45px;
   color: #fff;
-  background: -webkit-gradient(linear,left top,right top,from(#fe8464),color-stop(50%,#fe6e9a),to(#fe8464));
-  background: linear-gradient(90deg,var(--thirdDark) 0,var(--thirdColor) 50%,#fe8464);
+  background: -webkit-gradient(linear,left top,right top,from(var(--secDark)),to(var(--secColor)));
+  background: linear-gradient(90deg,var(--secDark) 0,var(--secColor) 50%,#fe8464);
   background-size: 200%;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
