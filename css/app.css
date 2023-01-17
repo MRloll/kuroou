@@ -87,6 +87,10 @@ margin-top: 10px;
 
 }
 
+.top-banner  p {
+  margin: 0;
+}
+
 .top-banner-layout {
   padding: 10px 0;
 }
@@ -103,13 +107,13 @@ margin-top: 10px;
   z-index: 3;
   bottom: 80px;
   right: 35px;
-background: var(--secColor);
+  background: var(--secColor);
   color: #fff;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -122,7 +126,7 @@ background: var(--secColor);
     position: fixed;
     bottom: 80px;
     left: 35px;
-    padding: 10px;
+    padding: 10px 12px;
     background-color:var(--secColor);
     color: #fff;
     border-radius: 50%;
@@ -131,7 +135,7 @@ background: var(--secColor);
 
 .whatsapp-fixed i{
     cursor: pointer;
-    font-size: 30px;
+    font-size: 27px;
     -webkit-transition: background-color .6s;
     -o-transition: background-color .6s;
     transition: background-color .6s;
@@ -140,7 +144,7 @@ background: var(--secColor);
     transition: transform .6s;
 }
 
-.whatsapp-fixed i:hover{
+.whatsapp-fixed:hover i{
     -webkit-transform: rotateZ(360deg);
     -ms-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
@@ -518,7 +522,7 @@ categroy courses
 }
 
 .category-item li:hover {
-  background-color: var(--thirdColor)
+  background-color: var(--secDark)
 }
 
 .collection-item {
@@ -999,7 +1003,7 @@ footer .footer-body  ul li a {
 }
 
 footer .footer-body  ul li a:hover {
-  color: white;
+  color: var(--mainColor);
 }
 
 footer .footer-body .logo-sec .head img {

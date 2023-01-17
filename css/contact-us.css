@@ -34,9 +34,7 @@
   width: 70px;
   margin-left: 20px;
 }
-.contact-us .form form .number-form {
-  width: calc(100% - 93px);
-}
+
 .contact-us .form form input[type="submit"]:hover {
   color: white;
 }

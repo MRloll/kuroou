@@ -52,18 +52,11 @@ section {
   margin: 10px 0;
 }
 
-.video .video-rating .streaming {
-  background: #fb2f2f;
-  border-radius: 6px;
-  padding: 7px 0;
-  color: white;
-  width: 127px;
-  text-align: center;
+.dollar {
+font-size: 34px;
+color: var(--mainColor);
 }
 
-.video .video-rating .streaming span {
-  margin-left: 6px;
-}
 
 .video .vertical-divider {
   height: 70px;
