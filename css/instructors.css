@@ -21,9 +21,9 @@
 .our-team .cards > div:nth-child(odd) .card,
 .our-team .cards > div:nth-child(odd) .card .card-footer p,
 .our-team .cards > div:nth-child(odd) .card svg {
-  border-color: var(--thirdColor);
-  fill: var(--thirdColor);
-  color: var(--thirdColor);
+  border-color: var(--secColor);
+  fill: var(--secColor);
+  color: var(--secColor);
 }
 
 .our-team .cards .card img {
