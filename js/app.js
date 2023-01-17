@@ -1,6 +1,8 @@
 (function ($) {
   "use strict";
 
+
+
   $(".change_lang").on("click", () => {
       $(".dropdown-list .wrapper, nav .dropdown-list .wrapper").slideToggle(200)
   })

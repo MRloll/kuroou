@@ -1,0 +1,209 @@
+section {
+  margin-top: 70px;
+  overflow: hidden;
+}
+
+h1,
+.h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p.lead {
+  font-size: 16px;
+}
+
+.vertical-divider {
+  width: 1px;
+  margin: 0 10px;
+  opacity: 50%;
+  background-color: rgba(17, 36, 89, 0.3);
+}
+
+@media (min-width: 576px) {
+  .top-elipse {
+    left: -9%;
+  }
+
+  .right-elipse {
+    right: -13%;
+  }
+}
+
+@media (max-width: 575px) {
+  .divider::before,
+  .divider::after {
+    width: 100px;
+  }
+}
+
+/* start video */
+section {
+  color: var(--secColor);
+}
+
+.video h1,
+.video h6 {
+  font-weight: bold;
+}
+
+.video .details h6 {
+  margin: 10px 0;
+}
+
+.video .video-rating .streaming {
+  background: #fb2f2f;
+  border-radius: 6px;
+  padding: 7px 0;
+  color: white;
+  width: 127px;
+  text-align: center;
+}
+
+.video .video-rating .streaming span {
+  margin-left: 6px;
+}
+
+.video .vertical-divider {
+  height: 70px;
+  margin-top: 35px;
+  opacity: 0.3;
+}
+
+.video .details .row > div {
+  position: relative;
+  padding: 0;
+}
+
+.video .details .row .wrapper {
+  padding: 0 15px;
+}
+
+.video .details .wrapper .vertical-divider {
+  position: absolute;
+  top: 0;
+  left: -25px;
+}
+
+.video .reviews {
+  flex-wrap: wrap;
+}
+
+.video .reviews > div {
+  width: 100%;
+}
+
+.video .reviews .socials a:hover {
+  text-decoration: none;
+}
+
+.video .reviews .vertical-divider {
+  height: auto;
+  background: rgba(17, 36, 89, 0.3);
+}
+
+.video .reviews .person .img .person-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 0 !important;
+}
+
+.video .reviews .person .info img {
+  width: 22px;
+}
+
+.video .reviews .person .socials i {
+  color: rgb(17, 36, 89);
+  font-size: 18px;
+  width: 35px;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid rgba(17, 36, 89, 0.2);
+  border-radius: 6px;
+  transition: color 0.3s ease;
+}
+
+.video .reviews .person .socials a:last-of-type {
+  margin-left: 0 !important;
+}
+
+.video .reviews .person .socials i.fa-instagram:hover {
+  color: #e1306c;
+}
+
+.video .reviews .person .socials i.fa-behance:hover {
+  color: #1e4ce6;
+}
+
+@media (min-width: 768px) {
+  .video .reviews .person {
+    width: 47%;
+  }
+
+  .video .reviews .person .img .person-img {
+    width: 83px;
+    height: 83px;
+  }
+}
+
+
+/* start what youll learn */
+
+.wywl {
+  grid-column: 1 / auto;
+  background-color: rgb(246, 246, 251);
+  border-radius: 25px;
+  margin: 60px 0px;
+  padding: 40px 40px 20px;
+  text-align: center;
+}
+
+.wywl h2 {
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 35px;
+  color: var(--secColor);
+}
+
+.wywl ul {
+  display: grid;
+  margin: 0px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wywl li {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secColor);
+  text-indent: -40px;
+  list-style-type: none;
+  margin-bottom: 25px;
+  margin-left:10px ;
+  flex: 1 1 300px;
+  padding-right: 30px;
+}
+.wywl li:nth-of-type(2n+1) {
+  margin-right: 30px;
+}
+
+.wywl li svg {
+  margin-left: 15px;
+}
+
+.wywl li svg path{
+  stroke: var(--mainColor);
+}
+
+@media  (max-width: 768px) {
+  .wywl li:nth-of-type(2n+1) {
+    margin-right: 0px;
+  }
+  .wywl ul {
+    grid-template-columns: 1fr;
+}
+}
