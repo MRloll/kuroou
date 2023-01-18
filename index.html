@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/slick.css" type="text/css" />
     <link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="css/app.css" type="text/css" />
     <link
       rel="stylesheet"
@@ -96,7 +97,7 @@
               </div> -->
             </div>
             <div class="logo d-block d-lg-none">
-              <img src="./images/kuroou-nav.svg" alt="logo" />
+              <img src="./images/kuroou-logo.svg" alt="logo" />
             </div>
 
             <button
@@ -139,7 +140,7 @@
       </div>
     </div>
 
-    <div class="section-course-header">
+    <div class="section-course-header" data-aos="fade-down">
       <div class="position-relative">
         <div class="header-wrapper">
           <div class="padding-vertical text-right slick-carousel">
@@ -155,11 +156,7 @@
                     </h1>
                     <p class="pt-5 h4">بعض الكلام يكون هنا</p>
                   </div>
-                  <img
-                    class="d-none d-lg-block logo"
-                    src="./images/kuroou-logo.svg"
-                    alt="logo"
-                  />
+                  <img class="logo" src="./images/kuroou-logo.svg" alt="logo" />
                 </div>
               </div>
             </div>
@@ -175,11 +172,7 @@
                     </h1>
                     <p class="pt-5 h4">بعض الكلام يكون هنا</p>
                   </div>
-                  <img
-                    class="d-none d-lg-block logo"
-                    src="./images/kuroou-logo.svg"
-                    alt="logo"
-                  />
+                  <img class="logo" src="./images/kuroou-logo.svg" alt="logo" />
                 </div>
               </div>
             </div>
@@ -210,33 +203,48 @@
       </div>
     </div> -->
 
-    <div class="statics py-5 my-5 text-center">
+    <div class="statics py-5 my-5 text-center position-relative">
+      <img class="elibse" src="./images/layer1.svg" alt="blob" />
+      <img class="elibse two" src="./images/layer4.svg" alt="blob" />
+
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4">
+          <div
+            class="col-12 col-md-4"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             <div class="nom">
               <h3>
                 <span class="counter" data-count="42">0</span><span>+</span>
               </h3>
-              <div class="divider"></div>
+              <img src="./images/underline.svg" alt="underline" />
               <p>كورسات</p>
             </div>
           </div>
-          <div class="col-12 col-md-4">
+          <div
+            class="col-12 col-md-4"
+            data-aos="fade-down"
+            data-aos-delay="400"
+          >
             <div class="nom">
               <h3>
                 <span class="counter" data-count="959">0</span><span>+</span>
               </h3>
-              <div class="divider"></div>
+              <img src="./images/underline.svg" alt="underline" />
               <p>محاضرون</p>
             </div>
           </div>
-          <div class="col-12 col-md-4">
+          <div
+            class="col-12 col-md-4"
+            data-aos="fade-down"
+            data-aos-delay="600"
+          >
             <div class="nom">
               <h3>
                 <span class="counter" data-count="9400">0</span><span>+</span>
               </h3>
-              <div class="divider"></div>
+              <img src="./images/underline.svg" alt="underline" />
               <p>طلاب</p>
             </div>
           </div>
@@ -247,24 +255,50 @@
     <!-- 
       ]]]]]]]]coursees
      -->
-    <div class="section-courses-tiles">
+    <div class="section-courses-tiles position-relative">
+      <img class="elibse" src="./images/layer3.svg" alt="blob" />
+      <img class="elibse two" src="./images/layer5.svg" alt="blob" />
+
       <div>
         <div class="container">
-          <div class="catalogue-label-div text-center">
-            <h2 class="catalogue-header column-title">كورساتنا</h2>
-            <h1 class="session-start-copy">كن مستعد لجميع الكورسات</h1>
+          <div class="catalogue-label-div text-center" data-aos="fade-down">
+            <h1 class="catalogue-header column-title">كورساتنا</h1>
+            <img
+              class="underline"
+              src="./images/underline.svg"
+              alt="underline"
+            />
+
+            <h2 class="session-start-copy">كن مستعد لجميع الكورسات</h2>
           </div>
           <ul class="category-item text-center">
-            <li class="btn btn-primary float-right btn-radius" data-filter="*">
+            <li
+              class="btn btn-primary float-right btn-radius"
+              data-filter="*"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               جميع الكورسات
             </li>
-            <li class="btn btn-primary btn-radius" data-filter=".categroy1">
+            <li
+              data-aos="fade-down"
+              data-aos-delay="150"
+              class="btn btn-primary btn-radius"
+              data-filter=".categroy1"
+            >
               الفئة 1
             </li>
-            <li class="btn btn-primary btn-radius" data-filter=".category2">
+            <li
+              data-aos="fade-down"
+              data-aos-delay="200"
+              class="btn btn-primary btn-radius"
+              data-filter=".category2"
+            >
               الفئة 2
             </li>
             <li
+              data-aos="fade-down"
+              data-aos-delay="250"
               class="btn btn-primary float-left btn-radius"
               data-filter=".category3"
             >
@@ -283,6 +317,7 @@
                       class="col-12 col-md-6 col-lg-4 categroy1 category2 category3 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -340,6 +375,7 @@
                       class="col-12 col-md-6 col-lg-4 categroy1 category2 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -397,6 +433,7 @@
                       class="col-12 col-md-6 col-lg-4 categroy1 category3 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -454,6 +491,7 @@
                       class="col-12 col-md-6 col-lg-4 category2 category3 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -511,6 +549,7 @@
                       class="col-12 col-md-6 col-lg-4 category2 category3 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -568,6 +607,7 @@
                       class="col-12 col-md-6 col-lg-4 categroy1 category3 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -625,6 +665,7 @@
                       class="col-12 col-md-6 col-lg-4 categroy1 category2 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -682,6 +723,7 @@
                       class="col-12 col-md-6 col-lg-4 categroy1 category3 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -739,6 +781,7 @@
                       class="col-12 col-md-6 col-lg-4 category2 category3 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -796,6 +839,7 @@
                       class="col-12 col-md-6 col-lg-4 category3 collection-item w-dyn-item"
                     >
                       <a
+                        data-aos="fade-down"
                         href="./watch-video.html"
                         target="_blank"
                         class="course-tile-img-wrapper w-inline-block"
@@ -863,7 +907,7 @@
      ////////////-->
     <footer>
       <div class="container">
-        <div class="subscribe">
+        <div class="subscribe" data-aos="fade-down">
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div
@@ -890,7 +934,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-body">
+        <div class="footer-body" data-aos="fade-down" data-aos-delay="100">
           <div class="row">
             <div class="col-lg-6 col-sm-12">
               <div
@@ -994,6 +1038,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/app.js"></script>
   <script>
     var $grid = $(".filter-container").isotope({

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/slick.css" type="text/css" />
     <link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -137,7 +138,7 @@
       </div>
     </div>
 
-    <div class="section-course-header">
+    <div class="section-course-header" data-aos="fade-down">
       <div class="position-relative">
         <div class="header-wrapper">
           <div class="padding-vertical text-right slick-carousel">
@@ -153,11 +154,7 @@
                     </h1>
                     <p class="pt-5 h4">بعض الكلام يكون هنا</p>
                   </div>
-                  <img
-                    class="d-none d-lg-block logo"
-                    src="./images/kuroou-logo.svg"
-                    alt="logo"
-                  />
+                  <img class="logo" src="./images/kuroou-logo.svg" alt="logo" />
                 </div>
               </div>
             </div>
@@ -173,11 +170,7 @@
                     </h1>
                     <p class="pt-5 h4">بعض الكلام يكون هنا</p>
                   </div>
-                  <img
-                    class="d-none d-lg-block logo"
-                    src="./images/kuroou-logo.svg"
-                    alt="logo"
-                  />
+                  <img class="logo" src="./images/kuroou-logo.svg" alt="logo" />
                 </div>
               </div>
             </div>
@@ -186,15 +179,24 @@
       </div>
     </div>
 
-    <div class="container our-team py-5">
-      <div class="row text-center">
+    <div class="container our-team py-5 position-relative">
+      <img class="elibse" src="./images/layer5.svg" alt="blob" />
+      <img class="elibse two" src="./images/layer6.svg" alt="blob" />
+
+      <div class="row text-center" data-aos="fade-down" data-aos-delay="100">
         <div class="col-lg-12 mb-5">
           <h1>تعرف علي محاضرونا المتميزون</h1>
+          <img class="underline" src="./images/underline.svg" alt="underline" />
+
           <p class="lead font-weight-normal mt-4">بعض الكلام يكون هنا</p>
         </div>
       </div>
       <div class="row cards g-4">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div
+          class="col-12 col-md-6 col-lg-4"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           <div
             class="card card-pink h-100 overflow-hidden shadow bg-white px-0"
           >
@@ -263,7 +265,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div
+          class="col-12 col-md-6 col-lg-4"
+          data-aos="fade-down"
+          data-aos-delay="200"
+        >
           <div
             class="card card-blue h-100 overflow-hidden shadow bg-white px-0"
           >
@@ -332,7 +338,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div
+          class="col-12 col-md-6 col-lg-4"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
           <div
             class="card card-pink h-100 overflow-hidden shadow bg-white px-0"
           >
@@ -401,7 +411,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div
+          class="col-12 col-md-6 col-lg-4"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        >
           <div
             class="card card-blue h-100 overflow-hidden shadow bg-white px-0"
           >
@@ -470,7 +484,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div
+          class="col-12 col-md-6 col-lg-4"
+          data-aos="fade-down"
+          data-aos-delay="500"
+        >
           <div
             class="card card-pink h-100 overflow-hidden shadow bg-white px-0"
           >
@@ -539,7 +557,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div
+          class="col-12 col-md-6 col-lg-4"
+          data-aos="fade-down"
+          data-aos-delay="600"
+        >
           <div
             class="card card-blue h-100 overflow-hidden shadow bg-white px-0"
           >
@@ -619,7 +641,7 @@
      ////////////-->
     <footer>
       <div class="container">
-        <div class="subscribe">
+        <div class="subscribe" data-aos="fade-down">
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div
@@ -646,7 +668,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-body">
+        <div class="footer-body" data-aos="fade-down" data-aos-delay="100">
           <div class="row">
             <div class="col-lg-6 col-sm-12">
               <div
@@ -749,5 +771,6 @@
   <script src="js/jQuery-3-4-1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="./js/aos.js"></script>
   <script src="js/app.js"></script>
 </html>

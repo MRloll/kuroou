@@ -106,5 +106,8 @@
     } )
 
 
+    AOS.init({
+        once: true
+    });
 })(jQuery);
 
