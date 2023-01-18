@@ -327,6 +327,7 @@ footer .elibse{
   justify-content: space-between;
   align-items: center;
   margin-left: auto;
+  z-index: 2;
 }
 
 .course-catalog-content .bg {
