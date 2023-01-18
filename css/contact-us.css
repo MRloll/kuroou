@@ -1,6 +1,7 @@
 
 .contact-us {
   color: var(--secColor);
+  overflow: hidden;
 }
 
 

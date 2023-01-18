@@ -13,6 +13,10 @@ p,span,h1,h1,h3,h4,h5,h6, div,a {
   /* font-family: 'Barlow', sans-serif; */
 
 }
+body,html {
+  overflow-x: clip;
+
+}
 
 
 .navbar_link, .banner-text {
@@ -87,13 +91,12 @@ margin-top: 10px;
   position: absolute;
   width: 200px;
   z-index: -1;
-  opacity: 0.2;
   animation: spin 20s linear  infinite;
 }
 
 .statics .elibse {
-  top: 200px;
-  left: 10%;
+  top: -10px;
+  right: 5%;
 }
 
 .statics .elibse.two {
@@ -113,6 +116,19 @@ margin-top: 10px;
   width: 200px;
 }
 
+.section-courses-tiles .elibse.shape {
+  top: 94px;
+  width: 342px;
+  left: 6%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 72px;
+  border-radius: 50%;
+
+}
+
+footer .elibse{
+  top: 0;
+}
 
 .our-team .elibse {
   left: -16%;
