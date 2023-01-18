@@ -8,9 +8,6 @@
   --linear:   background-image: linear-gradient(135deg, #f1a01f, #f04c2b);
 }
 
-body, html {
-  overflow-x: hidden;
-}
 p,span,h1,h1,h3,h4,h5,h6, div,a {
   font-family: 'cairo', sans-serif;
   /* font-family: 'Barlow', sans-serif; */
@@ -391,6 +388,9 @@ margin-top: 10px;
   .course-catalog-content .details-wrapper {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .course-catalog-content img.logo {
+    width: auto;
   }
 }
 /* nav */
